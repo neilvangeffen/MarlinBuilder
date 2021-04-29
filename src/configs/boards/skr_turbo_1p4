@@ -10,6 +10,9 @@ opt_set Z_MAX_PIN P1_00
 
 . $CFGDIR/accessories/use-32-microsteps
 
+opt_enable \
+    REVERSE_ENCODER_DIRECTION
+
 pushd Marlin/src/HAL
 rm -rf AVR DUE ESP32 LINUX SAMD51 STM* TEENSY*
 popd

@@ -39,9 +39,7 @@ jobs:
           github.event_name == 'pull_request' && '["bugfix-2.0.x", "2.0.7.2"]' ||
           '["2.0.7.2"]') }}
         machine:
-        - V1CNC_SkrTurbo_8825
-        - V1CNC_SkrTurbo_DualLR_8825
-        - V1CNC_SkrTurbo_Dual_8825
+        - V1CNC_SkrTurbo_DualLR_2209
 
     steps:
 
