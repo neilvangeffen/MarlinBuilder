@@ -1,12 +1,11 @@
 #!/bin/bash
 
-# This script adds the V1 logos, and names to the configs.
+# This script adds the names to the configs.
 
-opt_set STRING_CONFIG_H_AUTHOR "\"(V1 Engineering, Ryan, ${MB_VERSION})\""
+opt_set STRING_CONFIG_H_AUTHOR "\"(Ned van Geffen)\"" 
 
 # opt_set won't work, because it isn't in the configuration or configuration_adv.h, so I'm going to
 # just put it into the Configuration.h
-
 echo "#define SHORT_BUILD_VERSION \"${MB_VERSION} ${MARLIN_VERSION}\"" >> Marlin/Configuration.h
 
 opt_enable \

@@ -4,10 +4,13 @@ set -e
 
 restore_configs
 
-export V1_VERSION=${V1_VERSION}DL
+export MB_VERSION=${MB_VERSION}DL
+
+opt_set CUSTOM_MACHINE_NAME "\"V1 LR2 SKR1.3 TMC2130 ${MB_VERSION}\""
 
 $CFGDIR/common/v1-base-config
 $CFGDIR/common/cnc-config
+$CFGDIR/bootscreens/v1
 $CFGDIR/boards/skr_1p3
 $CFGDIR/accessories/dummy-extruder
 $CFGDIR/accessories/tmc2130

@@ -3,7 +3,7 @@ name: skr_turbo
 on:
   schedule:
     # At 12:15 each day. No idea what time zone this is...
-    - cron:  '15 12 * * *'
+    - cron:  '35 3 * * *'
   push:
     branches:
     - main
@@ -40,6 +40,8 @@ jobs:
           '["2.0.7.2"]') }}
         machine:
         - V1CNC_SkrTurbo_DualLR_2209
+        - Anet_A6_SkrTurbo_2209_Sensorless
+        - Wanhao_Duplicator_SkrTurbo_2209
 
     steps:
 

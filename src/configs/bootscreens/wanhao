@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Set the boot screen data and enable custom boot screen
+
+opt_set BOOTSCREEN_TIMEOUT "1500"
+
+cp $CFGDIR/configs/bootscreens/bootscreen-data/wanhao_boot.h Marlin/_Bootscreen.h
+opt_enable SHOW_CUSTOM_BOOTSCREEN
+
+echo "- Added and Enabled Wanhao Boot Screen" >> README.md

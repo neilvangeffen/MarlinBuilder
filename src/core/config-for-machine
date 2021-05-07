@@ -20,7 +20,7 @@ export PATH=$PATH:buildroot/bin
 
 restore_configs
 
-echo "# ${CONFIG_NAME} - ${MARLIN_VERSION} - ${V1_VERSION}" > README.md
+echo "# ${CONFIG_NAME} - ${MARLIN_VERSION} - ${MB_VERSION}" > README.md
 . $CFGDIR/$CONFIG_NAME
 
 # Set the default target for this board.
