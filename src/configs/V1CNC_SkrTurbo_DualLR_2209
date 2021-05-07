@@ -10,7 +10,7 @@ opt_set CUSTOM_MACHINE_NAME "\"V1 LR2 SKR1.4 TMC2209 ${MB_VERSION}\""
 
 $CFGDIR/common/v1-base-config
 $CFGDIR/common/cnc-config
-$CFGDIR/bootscreens/v1
+#$CFGDIR/bootscreens/v1
 $CFGDIR/boards/skr_turbo_1p4
 $CFGDIR/accessories/dummy-extruder
 $CFGDIR/accessories/tmc2209
