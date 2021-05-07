@@ -4,7 +4,7 @@
 
 opt_set BOOTSCREEN_TIMEOUT "1500"
 
-cp $CFGDIR/bootscreens/data/v1/_Bootscreen.h Marlin/
+cp $CFGDIR/bootscreens/data/v1_Bootscreen.h Marlin/_Bootscreen.h
 opt_enable SHOW_CUSTOM_BOOTSCREEN
 
 echo "- Added and Enabled V1 Boot Screen" >> README.md
