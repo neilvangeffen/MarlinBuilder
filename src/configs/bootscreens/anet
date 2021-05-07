@@ -4,7 +4,7 @@
 
 opt_set BOOTSCREEN_TIMEOUT "1500"
 
-cp $CFGDIR/bootscreens/bootscreen-data/anet_boot.h Marlin/_Bootscreen.h
+cp $CFGDIR/bootscreens/data/anet/_Bootscreen.h Marlin/
 opt_enable SHOW_CUSTOM_BOOTSCREEN
 
 echo "- Added and Enabled Anet Boot Screen" >> README.md
