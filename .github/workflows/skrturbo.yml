@@ -5,8 +5,8 @@ on:
     # At 12:15 each day. No idea what time zone this is...
     - cron:  '35 3 * * *'
   push:
-    branches:
-    - main
+    #branches:
+    #- main
   pull_request:
     branches:
     - main
