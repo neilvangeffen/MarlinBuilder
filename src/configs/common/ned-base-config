@@ -6,6 +6,7 @@ opt_set STRING_CONFIG_H_AUTHOR "\"(Ned van Geffen)\""
 
 # opt_set won't work, because it isn't in the configuration or configuration_adv.h, so I'm going to
 # just put it into the Configuration.h
+
 echo "#define SHORT_BUILD_VERSION \"${MB_VERSION} ${MARLIN_VERSION}\"" >> Marlin/Configuration.h
 
 opt_enable \
@@ -13,7 +14,7 @@ opt_enable \
     EEPROM_AUTO_INIT
 
 opt_disable \
-	EVENT_GCODE_SD_ABORT
+EVENT_GCODE_SD_ABORT
 
 # Start by putting the machine config and the marlin version in the readme
 echo "# ${CONFIG_NAME} - ${MARLIN_VERSION} - ${MB_VERSION}" > README.md
