@@ -10,7 +10,7 @@ opt_set CUSTOM_MACHINE_NAME "\"Anet A6 ${MB_VERSION}\""
 
 $CFGDIR/common/ned-base-config
 $CFGDIR/common/3dp-config
-$CFGDIR/bootscreens/anet
+#$CFGDIR/bootscreens/anet
 $CFGDIR/boards/skr_turbo_1p4
 $CFGDIR/accessories/tmc2209
 $CFGDIR/accessories/reprap_discount_full_graphic_lcd
