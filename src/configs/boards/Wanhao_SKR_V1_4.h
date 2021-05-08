@@ -424,9 +424,10 @@
     #define BTN_ENC                        P1_19 // (LCD_RS) 1.19
 
     #define SR_STROBE_PIN                  P0_28 // BTN_ENC
-    #define SR_DATA_PIN                    P1_20
-    
-    #define LCD_SDSS                 EXP2_07_PIN  // (16) J3-7 & AUX-4
+    #define SR_DATA_PIN                    P3_25 // BTN_EN2
+    #define SR_CLK_PIN                     P3_26 // BTN_EN1
+	
+	#define LCD_SDSS                 EXP2_07_PIN  // (16) J3-7 & AUX-4
 
     #if ENABLED(FYSETC_MINI_12864)
       #define DOGLCD_CS              EXP1_08_PIN
