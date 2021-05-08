@@ -1,6 +1,5 @@
 opt_set NOZZLE_TO_PROBE_OFFSET "{ 0, 0, 0 }"
 opt_set MULTIPLE_PROBING "3"
-opt_set Z_MIN_PROBE_PIN "Z_MAX_PIN"
 opt_set Z_MIN_PROBE_ENDSTOP_INVERTING "true"
 
 opt_enable \
@@ -9,4 +8,4 @@ opt_enable \
 opt_disable \
     Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
-echo "- Configured for Z Probe on Z_MAX with 0mm X,Y Offset" >> README.md
+echo "- Configured for Z Probe with 0mm X,Y Offset" >> README.md
