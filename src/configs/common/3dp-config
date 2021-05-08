@@ -34,9 +34,5 @@ opt_enable \
     STEALTHCHOP_Z \
     STEALTHCHOP_E
 
-opt_disable \
-    MIN_SOFTWARE_ENDSTOPS \
-    MAX_SOFTWARE_ENDSTOPS
-
 # Write some useful tidbits to the readme.
 echo "- Configured for 3D Printer" >> README.md
