@@ -62,8 +62,8 @@ opt_set SDCARD_CONNECTION "LCD"
 
 opt_set CHOPPER_TIMING "CHOPPER_DEFAULT_24V"
 
-opt_set X_MAX_PIN X_DIAG_PIN
-opt_set Y_MAX_PIN Y_DIAG_PIN
+opt_set X_MAX_PIN X_STOP_PIN
+opt_set Y_MAX_PIN Y_STOP_PIN
 
 opt_enable \
 	PIDTEMPBED \
