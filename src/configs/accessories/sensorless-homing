@@ -1,11 +1,3 @@
-opt_set X_MIN_ENDSTOP_INVERTING "true"
-opt_set Y_MIN_ENDSTOP_INVERTING "true"
-opt_set Z_MIN_ENDSTOP_INVERTING "true"
-opt_set X_MAX_ENDSTOP_INVERTING "true"
-opt_set Y_MAX_ENDSTOP_INVERTING "true"
-opt_set Z_MAX_ENDSTOP_INVERTING "true"
-opt_set Z_MIN_PROBE_ENDSTOP_INVERTING "true"
-
 opt_set SENSORLESS_HOMING
 
 # Move away from hard stops after homing to reduce the chance of prolonged stress on the machine
