@@ -1,8 +1,8 @@
 
 opt_set EXTRUDERS 2
 
-opt_set HOTEND_OFFSET_X "{ 0.0, 35.00 } // (mm) relative X-offset for each nozzle"
-opt_set HOTEND_OFFSET_Y "{ 0.0, 0.00 }  // (mm) relative Y-offset for each nozzle"
+opt_set HOTEND_OFFSET_X "{ 0.0, 35.00 }"
+opt_set HOTEND_OFFSET_Y "{ 0.0, 0.00 }"
 opt_set HOTEND_OFFSET_Z "{ 0.0, 0.00 }"
 
 opt_set TEMP_SENSOR_0 "61"
