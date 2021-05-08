@@ -15,8 +15,8 @@ else
     opt_set XY_PROBE_FEEDRATE "6000"
 fi
 opt_set HOMING_FEEDRATE_MM_M "{ (40*60), (40*60), (3*60) }"
-opt_set PREHEAT_1_TEMP_HOTEND "196"
-opt_set PREHEAT_1_TEMP_BED "62"
+opt_set PREHEAT_1_TEMP_HOTEND "220"
+opt_set PREHEAT_1_TEMP_BED "40"
 opt_set HOMING_BUMP_MM "{ 7, 7, 3 }"
 opt_set HOMING_BUMP_DIVISOR "{ 3, 3, 5 }"
 opt_set DEFAULT_STEPPER_DEACTIVE_TIME "1200"

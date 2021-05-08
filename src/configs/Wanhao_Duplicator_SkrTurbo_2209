@@ -8,11 +8,18 @@ export MB_VERSION=${MB_VERSION}DL
 
 opt_set CUSTOM_MACHINE_NAME "\"Duplicator ${MB_VERSION}\""
 
+#Replace pins file.... We need some custom stuff for the weird screen
+cp $CFGDIR/boards/Wanhao_SKR_V1_4.h Marlin/src/pins/lpc1768/pins_BTT_SKR_V1_4.h
+
 $CFGDIR/common/ned-base-config
 $CFGDIR/common/3dp-config
 $CFGDIR/bootscreens/wanhao
 $CFGDIR/boards/skr_turbo_1p4
 $CFGDIR/accessories/tmc2209
-$CFGDIR/accessories/reprap_discount_full_graphic_lcd
+$CFGDIR/accessories/z-probe-0-0
+$CFGDIR/accessories/auto-bed-leveling
+$CFGDIR/accessories/scew-correction
+$CFGDIR/accessories/babystepping
+$CFGDIR/accessories/duplicator-4
 
 export PLATFORMIO_ENV=LPC1769
