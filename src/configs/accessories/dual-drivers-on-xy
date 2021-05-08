@@ -1,8 +1,3 @@
-opt_set X_MIN_ENDSTOP_INVERTING "false"
-opt_set Y_MIN_ENDSTOP_INVERTING "false"
-opt_set X_MAX_ENDSTOP_INVERTING "false"
-opt_set Y_MAX_ENDSTOP_INVERTING "false"
-
 opt_set X2_USE_ENDSTOP "_XMAX_"
 opt_set Y2_USE_ENDSTOP "_YMAX_"
 
