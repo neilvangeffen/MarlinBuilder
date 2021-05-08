@@ -16,4 +16,7 @@ opt_enable \
     Y_DUAL_STEPPER_DRIVERS \
     Y_DUAL_ENDSTOPS
 
+opt_disable \
+	Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+
 echo "- Configured for Dual XY" >> README.md

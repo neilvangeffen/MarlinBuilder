@@ -18,8 +18,9 @@ opt_enable \
     USE_XMAX_PLUG \
     USE_YMAX_PLUG \
     USE_ZMAX_PLUG \
-    Z_MULTI_ENDSTOPS \
-    G38_PROBE_TARGET \
-    FIX_MOUNTED_PROBE
+    Z_MULTI_ENDSTOPS
+
+opt_disable \
+	Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
 echo "- Configured for Dual Z" >> README.md

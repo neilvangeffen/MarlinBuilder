@@ -21,8 +21,9 @@ opt_enable \
     USE_ZMAX_PLUG \
     X_DUAL_STEPPER_DRIVERS \
     X_DUAL_ENDSTOPS \
-    Z_MULTI_ENDSTOPS \
-    G38_PROBE_TARGET \
-    FIX_MOUNTED_PROBE
+    Z_MULTI_ENDSTOPS
+
+opt_disable \
+	Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
 echo "- Configured for Dual XZ" >> README.md
