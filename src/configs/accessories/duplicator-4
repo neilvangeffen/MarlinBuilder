@@ -20,9 +20,9 @@ opt_set DEFAULT_bedKp "37.60"
 opt_set DEFAULT_bedKi "4.90"
 opt_set DEFAULT_bedKd "192.48"
 
-opt_set Z_MIN_ENDSTOP_INVERTING "true // Set to true to invert the logic of the endstop."
-opt_set X_MAX_ENDSTOP_INVERTING "true // Set to true to invert the logic of the endstop."
-opt_set Y_MAX_ENDSTOP_INVERTING "true // Set to true to invert the logic of the endstop."
+opt_set Z_MIN_ENDSTOP_INVERTING "true"
+opt_set X_MAX_ENDSTOP_INVERTING "true"
+opt_set Y_MAX_ENDSTOP_INVERTING "true"
 
 opt_set DEFAULT_AXIS_STEPS_PER_UNIT "{ 94.12, 94.12, 400, 96.35 }"
 opt_set DEFAULT_MAX_FEEDRATE "{ 600, 600, 30, 25 }"
