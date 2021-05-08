@@ -3,6 +3,9 @@ opt_set MOTHERBOARD BOARD_BTT_SKR_V1_3
 opt_set SERIAL_PORT "-1"
 opt_set SERIAL_PORT_2 0
 
+opt_Set SD_DETECT_STATE "HIGH"
+opt_set SDCARD_CONNECTION "ONBOARD"
+
 . $CFGDIR/accessories/use-32-microsteps
 
 opt_enable \

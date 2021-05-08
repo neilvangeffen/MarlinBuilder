@@ -8,6 +8,9 @@ opt_set X_MAX_PIN E0_DIAG_PIN
 opt_set Z_MIN_PIN P1_27
 opt_set Z_MAX_PIN P1_00
 
+opt_Set SD_DETECT_STATE "HIGH"
+opt_set SDCARD_CONNECTION "ONBOARD"
+
 . $CFGDIR/accessories/use-32-microsteps
 
 opt_enable \

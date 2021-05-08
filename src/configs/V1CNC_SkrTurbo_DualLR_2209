@@ -15,5 +15,36 @@ $CFGDIR/boards/skr_turbo_1p4
 $CFGDIR/accessories/tmc2209
 $CFGDIR/accessories/reprap_discount_full_graphic_lcd
 $CFGDIR/accessories/dual-drivers-on-yz
+$CFGDIR/accessories/sensorless_homing
+$CFGDIR/accessories/use-32-microsteps-z-2mm
+$CFGDIR/accessories/auto-bed-leveling
+$CFGDIR/accessories/auto-z-leveling-big-bed
+$CFGDIR/accessories/scew-correction
+$CFGDIR/accessories/babystepping
+$CFGDIR/accessories/cnc-menu-items
+
+# Machine specific Overrides/Settings
+opt_set DEFAULT_MAX_FEEDRATE "{ 150, 150, 10, 25 }"
+opt_set X_BED_SIZE "1554"
+opt_set Y_BED_SIZE "3100"
+
+opt_set GRID_MAX_POINTS_X "5"
+opt_set GRID_MAX_POINTS_Y "7"
+
+opt_set MANUAL_X_HOME_POS "-25"
+opt_set MANUAL_Y_HOME_POS "-25"
+opt_set MANUAL_Z_HOME_POS "65"
+opt_set HOMING_BACKOFF_POST_MM "{ 0-MANUAL_X_HOME_POS, 0-MANUAL_Y_HOME_POS, 5 }"
+
+opt_set HOMING_FEEDRATE_XY "(50*60)"
+opt_set HOMING_FEEDRATE_Z "(5*60)"
+
+opt_set CHOPPER_TIMING "CHOPPER_DEFAULT_24V"
+
+# TMC2209: 0...255. TMC2130: -64...63
+opt_set X_STALL_SENSITIVITY  "50"
+opt_set Y_STALL_SENSITIVITY  "50"
+opt_set Y2_STALL_SENSITIVITY "50"
+opt_set Z_STALL_SENSITIVITY  "40"
 
 export PLATFORMIO_ENV=LPC1769

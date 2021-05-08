@@ -3,6 +3,9 @@ opt_set Y_MIN_ENDSTOP_INVERTING "false"
 opt_set X_MAX_ENDSTOP_INVERTING "false"
 opt_set Y_MAX_ENDSTOP_INVERTING "false"
 
+opt_set X2_USE_ENDSTOP "_XMAX_"
+opt_set Y2_USE_ENDSTOP "_YMAX_"
+
 opt_enable \
     MIN_SOFTWARE_ENDSTOPS \
     SOFT_ENDSTOPS_MENU_ITEM \

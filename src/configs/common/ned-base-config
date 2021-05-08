@@ -9,12 +9,19 @@ opt_set STRING_CONFIG_H_AUTHOR "\"(Ned van Geffen)\""
 
 echo "#define SHORT_BUILD_VERSION \"${MB_VERSION} ${MARLIN_VERSION}\"" >> Marlin/Configuration.h
 
+opt_set SAVED_POSITIONS "2"
+
 opt_enable \
     DIRECT_PIN_CONTROL \
-    EEPROM_AUTO_INIT
+    EEPROM_AUTO_INIT \
+	STATUS_MESSAGE_SCROLLING \
+	SCROLL_LONG_FILENAMES \
+	EMERGENCY_PARSER \
+	GCODE_CASE_INSENSITIVE
 
 opt_disable \
-	EVENT_GCODE_SD_ABORT
+	EVENT_GCODE_SD_ABORT \
+	HOST_KEEPALIVE_FEATURE
 
 # Start by putting the machine config and the marlin version in the readme
 echo "# ${CONFIG_NAME} - ${MARLIN_VERSION} - ${MB_VERSION}" > README.md

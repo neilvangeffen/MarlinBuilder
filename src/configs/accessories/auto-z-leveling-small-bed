@@ -1,0 +1,7 @@
+opt_set G34_MAX_GRADE "5"
+opt_set Z_STEPPER_ALIGN_ACC "0.02"
+
+opt_enable \
+	Z_STEPPER_AUTO_ALIGN 
+
+echo "- Configured auto Z leveling for Small Bed" >> README.md

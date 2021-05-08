@@ -24,7 +24,7 @@ opt_set Z2_CURRENT 900
 
 # Stall sensitivity values are driver specific.
 # These will only be used when sensorless homing is also enabled
-# TMC2209 sensitivity setting is 255..0, 0 being the most insentive
+# TMC2209: 0...255, 0 being the most insentive
 opt_set X_STALL_SENSITIVITY "50"
 opt_set X2_STALL_SENSITIVITY X_STALL_SENSITIVITY
 opt_set Y_STALL_SENSITIVITY "50"
@@ -36,10 +36,5 @@ opt_enable \
     MONITOR_DRIVER_STATUS \
     SQUARE_WAVE_STEPPING \
     TMC_DEBUG
-
-opt_disable \
-    STEALTHCHOP_XY \
-    STEALTHCHOP_Z \
-    STEALTHCHOP_E
 
 echo "- Configured for TMC2209" >> README.md

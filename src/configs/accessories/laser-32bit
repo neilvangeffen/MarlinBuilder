@@ -1,7 +1,6 @@
 
 opt_set SPINDLE_LASER_ACTIVE_STATE    HIGH
 
-
 opt_enable \
     LASER_FEATURE \
     LASER_POWER_INLINE \
