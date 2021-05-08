@@ -13,17 +13,5 @@ opt_enable \
 	Z2_STALL_SENSITIVITY \
 	HOME_AFTER_DEACTIVATE
 
-# Disable incompatible defaults.
-# - TMC diag pin is often hardwired to Z- thus a probe can not be connected there
-# - Sensorless homing uses diag pins which are already defined in pins.h thus no need to customize
-opt_disable \
-	Z_MIN_PROBE_PIN \
-	Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN \
-	X2_USE_ENDSTOP \
-	Y2_USE_ENDSTOP \
-	Z2_USE_ENDSTOP
-
-opt_set Z_MIN_ENDSTOP_INVERTING "false"
-
 echo "- Please make sure this comes AFTER dual driver config" >> README.md
 echo "- Configured for sensorless homing" >> README.md
