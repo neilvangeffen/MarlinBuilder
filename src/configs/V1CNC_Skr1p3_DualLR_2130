@@ -12,7 +12,6 @@ $CFGDIR/common/v1-base-config
 $CFGDIR/common/cnc-config
 $CFGDIR/bootscreens/v1
 $CFGDIR/boards/skr_1p3
-$CFGDIR/accessories/dummy-extruder
 $CFGDIR/accessories/tmc2130
 $CFGDIR/accessories/reprap_discount_full_graphic_lcd
 $CFGDIR/accessories/dual-drivers-on-yz
