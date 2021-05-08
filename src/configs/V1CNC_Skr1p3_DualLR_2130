@@ -17,6 +17,7 @@ $CFGDIR/accessories/reprap_discount_full_graphic_lcd
 $CFGDIR/accessories/dual-drivers-on-yz
 $CFGDIR/accessories/sensorless-homing
 $CFGDIR/accessories/use-32-microsteps-z-2mm
+$CFGDIR/accessories/z-probe-0-0
 $CFGDIR/accessories/auto-bed-leveling
 $CFGDIR/accessories/auto-z-leveling-big-bed
 $CFGDIR/accessories/scew-correction
