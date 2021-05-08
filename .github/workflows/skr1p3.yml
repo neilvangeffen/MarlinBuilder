@@ -3,10 +3,10 @@ name: skr_1p3
 on:
   schedule:
     # At 12:15 each day. No idea what time zone this is...
-    - cron:  '35 3 * * *'
+    - cron:  '05 18 * * *'
   push:
-    branches:
-    - main
+    #branches:
+    #- main
   pull_request:
     branches:
     - main
