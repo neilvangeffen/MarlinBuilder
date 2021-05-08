@@ -1,7 +1,7 @@
 opt_set CUSTOM_USER_MENU_TITLE "\"CNC Menu Items\""
 
-opt_set USER_DESC_1 "\"Move Z+10\""
-opt_set USER_GCODE_1 "\"G91\nG0 Z10 F600\nG90\""
+opt_set USER_DESC_1 "\"Move Z\+10\""
+opt_set USER_GCODE_1 "\"G91\\nG0 Z10 F600\\nG90\""
 
 opt_set USER_DESC_2 "\"Set X0 Y0\""
 opt_set USER_GCODE_2 "\"G92 X0 Y0\""
@@ -25,8 +25,8 @@ opt_set USER_GCODE_7 "\"G92 Z0\""
 opt_set USER_DESC_8 "\"Set Z1\""
 opt_set USER_GCODE_8 "\"G92 Z1\""
 
-opt_set USER_DESC_9 "\"Set Z-1\""
-opt_set USER_GCODE_9 "\"G92 Z-1\""
+opt_set USER_DESC_9 "\"Set Z\-1\""
+opt_set USER_GCODE_9 "\"G92 Z\-1\""
 
 opt_set USER_DESC_10 "\"Store Position 1\""
 opt_set USER_GCODE_10 "\"G60 S1\""
