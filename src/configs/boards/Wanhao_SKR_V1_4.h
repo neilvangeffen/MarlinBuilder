@@ -55,16 +55,16 @@
 // Limit Switches
 //
 
-#define X_MIN_PIN							X_DIAG_PIN
-#define Y_MIN_PIN							Y_DIAG_PIN
-#define Z_MIN_PIN							Z_DIAG_PIN
-#define X_MAX_PIN							E0_DIAG_PIN
-#define Y_MAX_PIN							E1_DIAG_PIN
-#define Z_MAX_PIN							PWR_DET_PIN
+#define X_MAX_PIN							X_DIAG_PIN
+#define Y_MAX_PIN							Y_DIAG_PIN
+#define Z_MAX_PIN							Z_DIAG_PIN
+#define X_MIN_PIN							E0_DIAG_PIN
+#define Y_MIN_PIN							E1_DIAG_PIN
+#define Z_MIN_PIN							PWR_DET_PIN
 
-#define X_STOP_PIN							X_MIN_PIN
-#define Y_STOP_PIN							Y_MIN_PIN
-#define Z_STOP_PIN							Z_MIN_PIN
+#define X_STOP_PIN							X_MAX_PIN
+#define Y_STOP_PIN							Y_MAX_PIN
+#define Z_STOP_PIN							Z_MAX_PIN
 
 //
 // Z Probe (when not Z_MIN_PIN)
