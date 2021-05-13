@@ -11,9 +11,9 @@ opt_set DEFAULT_bedKp "295.00"
 opt_set DEFAULT_bedKi "35.65"
 opt_set DEFAULT_bedKd "610.21"
 
-opt_set Z_MIN_ENDSTOP_INVERTING "true"
-opt_set X_MAX_ENDSTOP_INVERTING "true"
-opt_set Y_MAX_ENDSTOP_INVERTING "true"
+opt_set Z_MIN_ENDSTOP_INVERTING "false"
+opt_set X_MAX_ENDSTOP_INVERTING "false"
+opt_set Y_MAX_ENDSTOP_INVERTING "false"
 
 opt_set DEFAULT_AXIS_STEPS_PER_UNIT "{ 100, 100, 400, 95 }"
 opt_set DEFAULT_MAX_FEEDRATE "{ 400, 400, 10, 25 }"

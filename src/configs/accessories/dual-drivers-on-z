@@ -2,8 +2,6 @@ opt_set Z_HOME_DIR "+1"
 
 opt_set NUM_Z_STEPPER_DRIVERS "2"
 
-opt_set Z2_USE_ENDSTOP "_XMAX_"
-
 opt_enable \
     MIN_SOFTWARE_ENDSTOPS \
     MIN_SOFTWARE_ENDSTOP_Z \
