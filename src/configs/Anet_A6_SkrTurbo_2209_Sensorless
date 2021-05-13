@@ -15,5 +15,12 @@ $CFGDIR/boards/skr_turbo_1p4
 $CFGDIR/accessories/tmc2209
 $CFGDIR/accessories/reprap_discount_full_graphic_lcd
 $CFGDIR/accessories/dual-drivers-on-z
+$CFGDIR/accessories/sensorless-homing
+$CFGDIR/accessories/z-probe-0-0
+$CFGDIR/accessories/auto-bed-leveling
+$CFGDIR/accessories/auto-z-leveling-small-bed
+$CFGDIR/accessories/scew-correction
+$CFGDIR/accessories/babystepping
+$CFGDIR/accessories/anet-a6
 
 export PLATFORMIO_ENV=LPC1769
