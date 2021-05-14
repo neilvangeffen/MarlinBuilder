@@ -32,15 +32,20 @@ opt_set X_HOME_DIR "-1"
 opt_set Y_HOME_DIR "-1"
 opt_set Z_HOME_DIR "-1"
 
-opt_set X_BED_SIZE "222"
-opt_set Y_BED_SIZE "222"
+opt_set X_BED_SIZE "220"
+opt_set Y_BED_SIZE "217"
 
-opt_set X_MIN_POS "-3"
-opt_set Y_MIN_POS "-5"
-opt_set Z_MIN_POS "0"
+#setting Z to -2.5 as it homes z way too hard, and things its backing off 2mm after homing but it TIGHT, so probably bogus. So by adding this, it should leave 0.5mm of clearance on when moving Z to 0?
+opt_set X_MIN_POS "-5.5"
+opt_set Y_MIN_POS "-6"
+opt_set Z_MIN_POS "-2.5"
 opt_set X_MAX_POS "X_BED_SIZE"
 opt_set Y_MAX_POS "Y_BED_SIZE"
 opt_set Z_MAX_POS "230"
+
+opt_set MANUAL_X_HOME_POS "-2"
+opt_set MANUAL_Y_HOME_POS "0"
+opt_set MANUAL_Z_HOME_POS "1"
 
 opt_set LEVEL_CORNERS_INSET_LFRB "{ 30, 30, 30, 30 }"
 opt_set LEVEL_CORNERS_HEIGHT "0.1"
@@ -56,16 +61,18 @@ opt_set CHOPPER_TIMING "CHOPPER_DEFAULT_12V"
 opt_set GRID_MAX_POINTS_X "3"
 opt_set GRID_MAX_POINTS_Y "3"
 
+opt_set Z_HOMING_HEIGHT "5"
+
 # Slower homing is better for stallguard sensitivity
 opt_set HOMING_FEEDRATE_XY "(25*60)"
 opt_set HOMING_FEEDRATE_Z "(5*60)"
 opt_set HOMING_BUMP_DIVISOR "{ 1, 1, 1 }"
 
-# TMC2209: 0...255. TMC2130: -64...63
-opt_set X_STALL_SENSITIVITY  "50"
-opt_set Y_STALL_SENSITIVITY  "50"
-opt_set Y2_STALL_SENSITIVITY "50"
-opt_set Z_STALL_SENSITIVITY  "40"
+# TMC2209: 0...255. TMC2130: +64...-63
+opt_set X_STALL_SENSITIVITY  "80"
+opt_set Y_STALL_SENSITIVITY  "95"
+opt_set Z_STALL_SENSITIVITY  "86"
+opt_set Z2_STALL_SENSITIVITY "88"
 
 opt_enable \
 	PIDTEMPBED \
