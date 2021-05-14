@@ -11,7 +11,8 @@ opt_enable \
 	IMPROVE_HOMING_RELIABILITY \
 	Z_STALL_SENSITIVITY \
 	Z2_STALL_SENSITIVITY \
-	HOME_AFTER_DEACTIVATE
+	HOME_AFTER_DEACTIVATE \
+	SENSORLESS_BACKOFF_MM
 
 echo "- Please make sure this comes AFTER dual driver config" >> README.md
 echo "- Configured for sensorless homing" >> README.md
