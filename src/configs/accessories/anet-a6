@@ -58,7 +58,7 @@ opt_set CHOPPER_TIMING "CHOPPER_DEFAULT_12V"
 opt_set GRID_MAX_POINTS_X "3"
 opt_set GRID_MAX_POINTS_Y "3"
 
-opt_set Z_HOMING_HEIGHT "5"
+opt_set Z_HOMING_HEIGHT "15"
 opt_set Z_IDLE_HEIGHT "Z_HOME_POS"
 
 # Slower homing is better for stallguard sensitivity

@@ -41,7 +41,6 @@ jobs:
           '["2.0.8"]') }}
         machine:
         - V1CNC_SkrTurbo_DualLR_2209
-        - Anet_A6_SkrTurbo_2209_Sensorless_Basic
         - Anet_A6_SkrTurbo_2209_Sensorless
         - Wanhao_Duplicator_SkrTurbo_2209
 

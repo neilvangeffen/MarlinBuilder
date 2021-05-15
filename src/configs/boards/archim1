@@ -2,7 +2,7 @@ opt_set MOTHERBOARD "BOARD_ARCHIM1"
 
 opt_set SERIAL_PORT "-1"
 
-opt_set SPI_SPEED "SPI_HALF_SPEED"
+opt_set SD_SPI_SPEED "SPI_HALF_SPEED"
 
 opt_set MICROSTEP_MODES "{ 32, 32, 32, 32, 32, 32 }"
 
