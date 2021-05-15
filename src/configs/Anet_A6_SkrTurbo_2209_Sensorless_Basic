@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -e
+
+restore_configs
+
+export MB_VERSION=${MB_VERSION}DL
+
+opt_set CUSTOM_MACHINE_NAME "\"Anet A6 Basic ${MB_VERSION}\""
+
+$CFGDIR/common/ned-base-config
+$CFGDIR/common/3dp-config
+$CFGDIR/bootscreens/anet
+$CFGDIR/boards/skr_turbo_1p4
+$CFGDIR/accessories/tmc2209
+$CFGDIR/accessories/use-32-microsteps
+$CFGDIR/accessories/reprap_discount_full_graphic_lcd
+$CFGDIR/accessories/dual-drivers-on-z
+$CFGDIR/accessories/sensorless-homing
+$CFGDIR/accessories/anet-a6
+
+export PLATFORMIO_ENV=LPC1769
