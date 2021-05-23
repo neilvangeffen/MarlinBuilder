@@ -71,6 +71,8 @@ opt_set Y_STALL_SENSITIVITY  "95"
 opt_set Z_STALL_SENSITIVITY  "86"
 opt_set Z2_STALL_SENSITIVITY "88"
 
+opt_set Z2_USE_ENDSTOP "_YMAX_"
+
 opt_enable \
 	PIDTEMPBED \
 	USE_XMIN_PLUG \

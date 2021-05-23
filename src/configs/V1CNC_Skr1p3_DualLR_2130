@@ -25,7 +25,7 @@ $CFGDIR/accessories/babystepping
 #$CFGDIR/accessories/cnc-menu-items
 
 # Machine specific Overrides/Settings
-opt_set DEFAULT_MAX_FEEDRATE "{ 150, 150, 10, 25 }"
+opt_set DEFAULT_MAX_FEEDRATE "{ 150, 150, 10 }"
 opt_set X_BED_SIZE "1554"
 opt_set Y_BED_SIZE "3100"
 
