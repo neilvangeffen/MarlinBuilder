@@ -1,6 +1,3 @@
-opt_set DEFAULT_AXIS_STEPS_PER_UNIT "{ 200, 200, 3200, 200 }"
-opt_set DISABLE_INACTIVE_Z "true"
-
 # NB! The values below will only have any effect if the board is fitted with programmable drivers
 
 opt_set X_MICROSTEPS "32"
