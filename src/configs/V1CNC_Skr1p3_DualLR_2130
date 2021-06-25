@@ -22,7 +22,7 @@ $CFGDIR/accessories/auto-bed-leveling
 $CFGDIR/accessories/auto-z-leveling-big-bed
 $CFGDIR/accessories/scew-correction
 $CFGDIR/accessories/babystepping
-$CFGDIR/accessories/cnc-menu-items
+#$CFGDIR/accessories/cnc-menu-items
 
 # Machine specific Overrides/Settings
 opt_set DEFAULT_MAX_FEEDRATE "{ 150, 150, 10 }"
