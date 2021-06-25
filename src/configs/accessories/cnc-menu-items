@@ -1,55 +1,57 @@
-opt_set CUSTOM_USER_MENU_TITLE "\"CNC Menu Items\""
+opt_enable CUSTOM_MENU_MAIN
 
-opt_set USER_DESC_1 "\"Move Z\+10\""
-opt_set USER_GCODE_1 "\"G91\\nG0 Z10 F600\\nG90\""
+opt_set CUSTOM_MENU_MAIN_TITLE "\"CNC Menu Items\""
 
-opt_set USER_DESC_2 "\"Set X0 Y0\""
-opt_set USER_GCODE_2 "\"G92 X0 Y0\""
+opt_set MAIN_MENU_ITEM_1_DESC "\"Move Z\+10\""
+opt_set MAIN_MENU_ITEM_1_GCODE "\"G91\\nG0 Z10 F600\\nG90\""
 
-opt_set USER_DESC_3 "\"Go To X0 Y0\""
-opt_set USER_GCODE_3 "\"G0 X0 Y0 F6000\""
+opt_set MAIN_MENU_ITEM_2_DESC "\"Set X0 Y0\""
+opt_set MAIN_MENU_ITEM_2_GCODE "\"G92 X0 Y0\""
 
-opt_set USER_DESC_4 "\"Home X Y\""
-opt_set USER_GCODE_4 "\"G28 XY\""
+opt_set MAIN_MENU_ITEM_3_DESC "\"Go To X0 Y0\""
+opt_set MAIN_MENU_ITEM_3_GCODE "\"G0 X0 Y0 F6000\""
 
-opt_set USER_DESC_5 "\"Home Z\""
-opt_set USER_GCODE_5 "\"G28 Z\""
+opt_set MAIN_MENU_ITEM_4_DESC "\"Home X Y\""
+opt_set MAIN_MENU_ITEM_4_GCODE "\"G28 XY\""
 
-opt_set USER_DESC_6 "\"Probe Z\""
-opt_set USER_GCODE_6 "\"G30\""
-#opt_set USER_GCODE_6 "\"G38.2\""
+opt_set MAIN_MENU_ITEM_5_DESC "\"Home Z\""
+opt_set MAIN_MENU_ITEM_5_GCODE "\"G28 Z\""
 
-opt_set USER_DESC_7 "\"Set Z0\""
-opt_set USER_GCODE_7 "\"G92 Z0\""
+opt_set MAIN_MENU_ITEM_6_DESC "\"Probe Z\""
+opt_set MAIN_MENU_ITEM_6_GCODE "\"G30\""
+#opt_set MAIN_MENU_ITEM_6_GCODE "\"G38.2\""
 
-opt_set USER_DESC_8 "\"Set Z1\""
-opt_set USER_GCODE_8 "\"G92 Z1\""
+opt_set MAIN_MENU_ITEM_7_DESC "\"Set Z0\""
+opt_set MAIN_MENU_ITEM_7_GCODE "\"G92 Z0\""
 
-opt_set USER_DESC_9 "\"Set Z\-1\""
-opt_set USER_GCODE_9 "\"G92 Z\-1\""
+opt_set MAIN_MENU_ITEM_8_DESC "\"Set Z1\""
+opt_set MAIN_MENU_ITEM_8_GCODE "\"G92 Z1\""
 
-opt_set USER_DESC_10 "\"Store Position 1\""
-opt_set USER_GCODE_10 "\"G60 S1\""
+opt_set MAIN_MENU_ITEM_9_DESC "\"Set Z\-1\""
+opt_set MAIN_MENU_ITEM_9_GCODE "\"G92 Z\-1\""
 
-opt_set USER_DESC_11 "\"Store Position 2\""
-opt_set USER_GCODE_11 "\"G60 S2\""
+opt_set MAIN_MENU_ITEM_10_DESC "\"Store Position 1\""
+opt_set MAIN_MENU_ITEM_10_GCODE "\"G60 S1\""
 
-opt_set USER_DESC_12 "\"Recall Position 1\""
-opt_set USER_GCODE_12 "\"G61 S1\""
+opt_set MAIN_MENU_ITEM_11_DESC "\"Store Position 2\""
+opt_set MAIN_MENU_ITEM_11_GCODE "\"G60 S2\""
 
-opt_set USER_DESC_13 "\"Recall Position 2\""
-opt_set USER_GCODE_13 "\"G61 S2\""
+opt_set MAIN_MENU_ITEM_12_DESC "\"Recall Position 1\""
+opt_set MAIN_MENU_ITEM_12_GCODE "\"G61 S1\""
 
-opt_set USER_DESC_14 "\"Machine Coordinates\""
-opt_set USER_GCODE_14 "\"G53\""
+opt_set MAIN_MENU_ITEM_13_DESC "\"Recall Position 2\""
+opt_set MAIN_MENU_ITEM_13_GCODE "\"G61 S2\""
 
-opt_set USER_DESC_15 "\"Workspace 1 Coordinates\""
-opt_set USER_GCODE_15 "\"G54\""
+opt_set MAIN_MENU_ITEM_14_DESC "\"Machine Coordinates\""
+opt_set MAIN_MENU_ITEM_14_GCODE "\"G53\""
 
-opt_set USER_DESC_16 "\"Workspace 2 Coordinates\""
-opt_set USER_GCODE_16 "\"G55\""
+opt_set MAIN_MENU_ITEM_15_DESC "\"Workspace 1 Coordinates\""
+opt_set MAIN_MENU_ITEM_15_GCODE "\"G54\""
 
-opt_set USER_DESC_17 "\"Workspace 3 Coordinates\""
-opt_set USER_GCODE_17 "\"G56\""
+opt_set MAIN_MENU_ITEM_16_DESC "\"Workspace 2 Coordinates\""
+opt_set MAIN_MENU_ITEM_16_GCODE "\"G55\""
+
+opt_set MAIN_MENU_ITEM_17_DESC "\"Workspace 3 Coordinates\""
+opt_set MAIN_MENU_ITEM_17_GCODE "\"G56\""
 
 echo "- Configured CNC User Menu" >> README.md
