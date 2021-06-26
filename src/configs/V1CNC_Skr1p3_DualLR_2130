@@ -72,7 +72,7 @@ opt_enable JOYSTICK_DEBUG
 opt_set JOY_X_PIN "P0_25"
 opt_set JOY_Y_PIN "P0_24"
 opt_set JOY_Z_PIN "P0_23"
-opt_set JOY_EN_PIN "P2_0"
+opt_set JOY_EN_PIN "P2_00"
 
 opt_set JOY_X_LIMITS "{ 0, 2048-100, 2048+100, 4095 }"
 opt_set JOY_Y_LIMITS "{ 0, 2048-100, 2048+100, 4095 }"
