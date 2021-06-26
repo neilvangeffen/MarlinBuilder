@@ -74,8 +74,8 @@ opt_set JOY_Y_PIN "P0_24"
 opt_set JOY_Z_PIN "P0_23"
 opt_set JOY_EN_PIN "P2_00"
 
-opt_set JOY_X_LIMITS "{ 0, 3226-100, 3226+100, 4095 }"
-opt_set JOY_Y_LIMITS "{ 0, 3251-100, 3251+100, 4095 }"
-opt_set JOY_Z_LIMITS "{ 0, 3258-100, 3258+100, 4095 }"
+opt_set JOY_X_LIMITS "{ 0, 3226-150, 3226+150, 4095 }"
+opt_set JOY_Y_LIMITS "{ 0, 3450-150, 3450+150, 4095 }"
+opt_set JOY_Z_LIMITS "{ 0, 3258-150, 3258+150, 4095 }"
 
 export PLATFORMIO_ENV=LPC1768

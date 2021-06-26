@@ -27,8 +27,8 @@ opt_set MAIN_MENU_ITEM_7_GCODE "\"G92 Z0\""
 opt_set MAIN_MENU_ITEM_8_DESC "\"Set Z1\""
 opt_set MAIN_MENU_ITEM_8_GCODE "\"G92 Z1\""
 
-opt_set MAIN_MENU_ITEM_9_DESC "\"Set Z\-1\""
-opt_set MAIN_MENU_ITEM_9_GCODE "\"G92 Z\-1\""
+opt_set MAIN_MENU_ITEM_9_DESC "\"Set Z-1\""
+opt_set MAIN_MENU_ITEM_9_GCODE "\"G92 Z-1\""
 
 opt_set MAIN_MENU_ITEM_10_DESC "\"Store Position 1\""
 opt_set MAIN_MENU_ITEM_10_GCODE "\"G60 S1\""
