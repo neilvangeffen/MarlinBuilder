@@ -3,7 +3,7 @@ opt_enable CUSTOM_MENU_MAIN
 opt_set CUSTOM_MENU_MAIN_TITLE "\"CNC Menu Items\""
 
 opt_set MAIN_MENU_ITEM_1_DESC "\"Move Z\+10\""
-opt_set MAIN_MENU_ITEM_1_GCODE "\"G91\\nG0 Z10 F600\\nG90\""
+opt_set MAIN_MENU_ITEM_1_GCODE "\"G91\\\nG0 Z10 F600\\\nG90\""
 
 opt_set MAIN_MENU_ITEM_2_DESC "\"Set X0 Y0\""
 opt_set MAIN_MENU_ITEM_2_GCODE "\"G92 X0 Y0\""
