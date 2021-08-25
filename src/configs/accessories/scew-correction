@@ -1,5 +1,6 @@
 opt_enable \
 	SKEW_CORRECTION \
+	SKEW_CORRECTION_FOR_Z \ 
 	SKEW_CORRECTION_GCODE 
 
 echo "- Configured Scew Correction" >> README.md
