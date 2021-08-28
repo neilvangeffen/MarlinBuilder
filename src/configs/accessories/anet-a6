@@ -3,24 +3,24 @@ opt_set EXTRUDERS 1
 opt_set TEMP_SENSOR_0 "11"
 opt_set TEMP_SENSOR_BED "11"
 
-opt_set DEFAULT_Kp "16.83"
-opt_set DEFAULT_Ki "1.02"
-opt_set DEFAULT_Kd "69.29"
+opt_set DEFAULT_Kp "16.07"
+opt_set DEFAULT_Ki "1.03"
+opt_set DEFAULT_Kd "62.47"
 
-opt_set DEFAULT_bedKp "295.00"
-opt_set DEFAULT_bedKi "35.65"
-opt_set DEFAULT_bedKd "610.21"
+opt_set DEFAULT_bedKp "61.12"
+opt_set DEFAULT_bedKi "9.75"
+opt_set DEFAULT_bedKd "255.32"
 
 opt_set Z_MIN_ENDSTOP_INVERTING "false"
 opt_set X_MAX_ENDSTOP_INVERTING "false"
 opt_set Y_MAX_ENDSTOP_INVERTING "false"
 
-opt_set DEFAULT_AXIS_STEPS_PER_UNIT "{ 200, 200, 800, 180 }"
+opt_set DEFAULT_AXIS_STEPS_PER_UNIT "{ 200, 200, 800, 195.91 }"
 opt_set DEFAULT_MAX_FEEDRATE "{ 400, 400, 10, 25 }"
 opt_set DEFAULT_MAX_ACCELERATION "{ 9000, 5000, 50,  10000 }"
 
-opt_set DEFAULT_ACCELERATION "1000"
-opt_set DEFAULT_RETRACT_ACCELERATION "1000"
+opt_set DEFAULT_ACCELERATION "600"
+opt_set DEFAULT_RETRACT_ACCELERATION "600"
 opt_set DEFAULT_TRAVEL_ACCELERATION "1000"
 
 opt_set INVERT_X_DIR "false"
@@ -74,6 +74,9 @@ opt_set Z2_STALL_SENSITIVITY "88"
 opt_set Z2_USE_ENDSTOP "_YMAX_"
 
 opt_set LIN_ADVANCE_K "0"
+opt_set XY_SKEW_FACTOR "-0.00304156382"
+opt_set XZ_SKEW_FACTOR "-0.00848072326"
+opt_set YZ_SKEW_FACTOR "+0.00530320151"
 
 opt_enable \
 	PIDTEMPBED \
