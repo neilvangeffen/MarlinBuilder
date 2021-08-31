@@ -2,17 +2,22 @@
 opt_set EXTRUDERS 2
 
 opt_set HOTEND_OFFSET_X "{ 0.0, 35.00 }"
-opt_set HOTEND_OFFSET_Y "{ 0.0, 0.00 }"
-opt_set HOTEND_OFFSET_Z "{ 0.0, 0.00 }"
+opt_set HOTEND_OFFSET_Y "{ 0.0,  0.00 }"
+opt_set HOTEND_OFFSET_Z "{ 0.0,  0.00 }"
 
 opt_set TEMP_SENSOR_0 "61"
 opt_set TEMP_SENSOR_1 "61"
 opt_set TEMP_SENSOR_BED "1"
 
 # Duplicator 4
-opt_set DEFAULT_Kp "20"
-opt_set DEFAULT_Ki "1.2"
-opt_set DEFAULT_Kd "80"
+opt_set DEFAULT_Kp_LIST "{  20.32,  19.15 }"
+opt_set DEFAULT_Ki_LIST "{   1.27,   1.15 }"
+opt_set DEFAULT_Kd_LIST "{  81.24,  79.96 }"
+
+# Duplicator 4
+opt_set DEFAULT_Kp "20.32"
+opt_set DEFAULT_Ki "1.27"
+opt_set DEFAULT_Kd "81.24"
 
 # Duplicator 4
 # from pidautotune
