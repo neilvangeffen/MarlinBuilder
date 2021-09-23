@@ -40,9 +40,9 @@ opt_set DEFAULT_TRAVEL_ACCELERATION "1000"
 opt_set INVERT_Y_DIR "false"
 opt_set INVERT_Z_DIR "true"
 
-opt_set X_BED_SIZE "220"
-opt_set Y_BED_SIZE "220"
-opt_set Z_MAX_POS "250"
+opt_set X_BED_SIZE "300"
+opt_set Y_BED_SIZE "300"
+opt_set Z_MAX_POS "340"
 
 opt_set FIL_RUNOUT_PIN "PA4"
 
