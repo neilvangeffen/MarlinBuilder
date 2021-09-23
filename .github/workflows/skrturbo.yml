@@ -2,8 +2,8 @@ name: skr_turbo
 
 on:
   schedule:
-    # At 12:15 each day. No idea what time zone this is...
-    - cron:  '7 18 * * *'
+    # At 12:15 each Wednesday. No idea what time zone this is...
+    - cron:  '09 18 * * 3'
   push:
     #branches:
     #- main

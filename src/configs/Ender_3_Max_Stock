@@ -11,9 +11,6 @@ opt_set CUSTOM_MACHINE_NAME "\"Ender-3 Max ${MB_VERSION}\""
 $CFGDIR/bootscreens/ender
 $CFGDIR/boards/creality_v4_2_2
 
-opt_set SERIAL_PORT "1"
-
-opt_set MOTHERBOARD "\"BOARD_CREALITY_V4\""
 opt_set CUSTOM_MACHINE_NAME "\"Ender-3 Max 4.2.2\""
 
 opt_set TEMP_SENSOR_BED "1"
