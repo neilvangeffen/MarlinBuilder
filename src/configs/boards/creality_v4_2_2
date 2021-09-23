@@ -1,0 +1,10 @@
+opt_set MOTHERBOARD "BOARD_CREALITY_V4"
+
+opt_set SERIAL_PORT "1"
+
+pushd Marlin/src/HAL
+rm -rf AVR DUE ESP32 LINUX LPC1768 SAMD51 TEENSY*
+popd
+
+# Write some useful tidbits to the readme.
+echo "- Configured for Creality V4.2.2" >> README.md
