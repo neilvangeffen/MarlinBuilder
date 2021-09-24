@@ -44,15 +44,13 @@ opt_set X_BED_SIZE "300"
 opt_set Y_BED_SIZE "300"
 opt_set Z_MAX_POS "340"
 
-opt_set GRID_MAX_POINTS_X "7"
-opt_set GRID_MAX_POINTS_Y "7"
+opt_set GRID_MAX_POINTS_X "6"
+opt_set GRID_MAX_POINTS_Y "6"
 
 opt_enable Z_SAFE_HOMING 
 opt_set Z_MIN_ENDSTOP_INVERTING  "true"
 opt_set Z_MIN_PROBE_ENDSTOP_INVERTING "true"
-opt_set MULTIPLE_PROBING "3"
-opt_set EXTRA_PROBING "1"
-opt_set NOZZLE_TO_PROBE_OFFSET "{ 0, 0, 0 }"
+opt_set NOZZLE_TO_PROBE_OFFSET "{ 0, 0, +3.85 }"
 
 opt_set FIL_RUNOUT_PIN "PA4"
 
