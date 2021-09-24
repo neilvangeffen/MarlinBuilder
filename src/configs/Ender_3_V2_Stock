@@ -44,8 +44,8 @@ opt_set INVERT_Z_DIR "true"
 opt_set X_BED_SIZE "220"
 opt_set Y_BED_SIZE "220"
 opt_set Z_MAX_POS "250"
-opt_et GRID_MAX_POINTS_X "4"
-opt_et GRID_MAX_POINTS_Y "4"
+opt_set GRID_MAX_POINTS_X "4"
+opt_set GRID_MAX_POINTS_Y "4"
 
 opt_set FIL_RUNOUT_PIN "PA4"
 
