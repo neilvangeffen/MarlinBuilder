@@ -44,8 +44,13 @@ opt_set INVERT_Z_DIR "true"
 opt_set X_BED_SIZE "220"
 opt_set Y_BED_SIZE "220"
 opt_set Z_MAX_POS "250"
-opt_set GRID_MAX_POINTS_X "4"
-opt_set GRID_MAX_POINTS_Y "4"
+
+opt_set GRID_MAX_POINTS_X "5"
+opt_set GRID_MAX_POINTS_Y "5"
+
+opt_set Z_MIN_PROBE_ENDSTOP_INVERTING "true"
+opt_set MULTIPLE_PROBING "3"
+opt_set EXTRA_PROBING "1"
 
 opt_set FIL_RUNOUT_PIN "PA4"
 
@@ -112,11 +117,11 @@ opt_enable \
 	SQUARE_WAVE_STEPPING \
 	HOST_ACTION_COMMANDS \
 	HOST_PROMPT_SUPPORT \
-	EMERGENCY_PARSER
-	
-opt_disable \
-	Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+	EMERGENCY_PARSER \
+	NOZZLE_AS_PROBE \
+	SKEW_CORRECTION \
+	SKEW_CORRECTION_GCODE
 
-echo "- Configured for Ender 3 Max" >> README.md
+echo "- Configured for Ender 3 V2" >> README.md
 
 export PLATFORMIO_ENV=STM32F103RET6_creality
