@@ -51,10 +51,10 @@ opt_set GRID_MAX_POINTS_Y "4"
 opt_enable Z_SAFE_HOMING
 opt_set Z_SAFE_HOMING_X_POINT "5"
 opt_set Z_SAFE_HOMING_Y_POINT "5"
-opt_set Z_MIN_ENDSTOP_INVERTING  "true"
-opt_set Z_MIN_PROBE_ENDSTOP_INVERTING "true"
 opt_set NOZZLE_TO_PROBE_OFFSET "{ 0, 0, 0 }"
 opt_enable PROBE_MANUALLY
+#opt_set Z_MIN_ENDSTOP_INVERTING  "true"
+#opt_set Z_MIN_PROBE_ENDSTOP_INVERTING "true"
 #opt_enable NOZZLE_AS_PROBE
 
 opt_set FIL_RUNOUT_PIN "PA4"
