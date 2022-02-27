@@ -75,9 +75,9 @@ jobs:
       run: |
         src/core/config-for-machine ${{ matrix.machine }}
 
-    #- name: Build
-    #  run: |
-    #    src/core/build-for-machine
+    - name: Build
+      run: |
+        src/core/build-for-machine
 
     - name: Zip up Marlin
       run: |
