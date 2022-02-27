@@ -6,7 +6,7 @@ restore_configs
 
 export MB_VERSION=${MB_VERSION}DL
 
-$CFGDIR/boards/skr_v3_e3
+$CFGDIR/boards/skr_e3_v3
 
 opt_set CUSTOM_MACHINE_NAME "\"Ender-3 V2 SKR\""
 opt_set STRING_CONFIG_H_AUTHOR "(Ned, SKR-mini-E3-V3.0)"
