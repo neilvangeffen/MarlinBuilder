@@ -158,4 +158,4 @@ opt_disable Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
 echo "- Configured for Ender 3 V2 SKR" >> README.md
 
-export PLATFORMIO_ENV=STM32F103RET6_creality
+export PLATFORMIO_ENV=STM32G0B1RE_btt
