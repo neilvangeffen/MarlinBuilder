@@ -1,7 +1,7 @@
 name: skr_mini_e3_v3
 
 on:
-  schedule:
+  #schedule:
     # At 12:15 each Wednesday. No idea what time zone this is...
     #- cron:  '09 18 * * 3'
   push:
