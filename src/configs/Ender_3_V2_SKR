@@ -99,6 +99,9 @@ opt_set FILAMENT_CHANGE_FAST_LOAD_LENGTH "350"
 
 opt_set Z_HYBRID_THRESHOLD "20"
 
+opt_enable \
+	EMERGENCY_PARSER
+
 echo "- Configured for Ender 3 V2 SKR" >> README.md
 
 export PLATFORMIO_ENV=STM32G0B1RE_btt
