@@ -10,6 +10,8 @@ opt_set CUSTOM_MACHINE_NAME "\"Ender-3 V2 ${MB_VERSION}\""
 
 $CFGDIR/boards/creality_v4_2_2
 
+opt_enable FAN_SOFT_PWM 
+
 echo "- Configured for Ender 3 V2" >> README.md
 
 export PLATFORMIO_ENV=STM32F103RE_creality
