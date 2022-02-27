@@ -8,10 +8,8 @@ export MB_VERSION=${MB_VERSION}DL
 
 opt_set CUSTOM_MACHINE_NAME "\"Ender-3 V2 ${MB_VERSION}\""
 
-$CFGDIR/boards/creality_v4_2_2
+$CFGDIR/boards/skr_e3_v3
 
-opt_enable FAN_SOFT_PWM 
+echo "- Configured for Ender 3 V2 SKR" >> README.md
 
-echo "- Configured for Ender 3 V2" >> README.md
-
-export PLATFORMIO_ENV=STM32F103RE_creality
+export PLATFORMIO_ENV=STM32G0B1RE_btt
