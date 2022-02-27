@@ -133,4 +133,4 @@ opt_enable \
 
 echo "- Configured for Ender 3 Max" >> README.md
 
-export PLATFORMIO_ENV=STM32F103RET6_creality
+export PLATFORMIO_ENV=STM32F103RE_creality
