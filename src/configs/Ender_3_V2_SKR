@@ -8,6 +8,9 @@ export MB_VERSION=${MB_VERSION}DL
 
 $CFGDIR/boards/skr_e3_v3
 
+#Replace pins file.... Remove the supid error!
+cp $CFGDIR/boards/pins_BTT_SKR_MINI_E3_V3_0.h Marlin/src/pins/stm32g0/pins_BTT_SKR_MINI_E3_V3_0.h
+
 opt_set CUSTOM_MACHINE_NAME "\"Ender-3 V2 SKR\""
 opt_set STRING_CONFIG_H_AUTHOR "(Ned, SKR-mini-E3-V3.0)"
 
