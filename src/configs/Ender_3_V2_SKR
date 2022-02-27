@@ -12,4 +12,4 @@ $CFGDIR/boards/creality_v4_2_2
 
 echo "- Configured for Ender 3 V2" >> README.md
 
-export PLATFORMIO_ENV=STM32F103RET6_creality
+export PLATFORMIO_ENV=STM32F103RE_creality
