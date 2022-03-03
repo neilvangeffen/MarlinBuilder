@@ -4,6 +4,8 @@ opt_set MOTHERBOARD "BOARD_BTT_SKR_MINI_E3_V3_0"
 opt_set SERIAL_PORT -1
 opt_set BAUDRATE "115200"
 
+opt_set SERIAL_PORT_2 1
+
 # Write some useful tidbits to the readme.
 echo "- Configured for SKR Mine E3 V3" >> README.md
 
