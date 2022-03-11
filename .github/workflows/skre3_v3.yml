@@ -41,6 +41,7 @@ jobs:
           '["2.0.8"]') }}
         machine:
         - Ender_3_V2_SKR
+        - Ender_3_Max_SKR
 
     steps:
 
