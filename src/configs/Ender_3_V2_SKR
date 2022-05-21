@@ -11,7 +11,7 @@ opt_set CUSTOM_MACHINE_NAME "\"Ender-3 V2 ${MB_VERSION}\""
 $CFGDIR/boards/skr_e3_v3
 
 #Replace pins file.... Remove the supid error!
-cp $CFGDIR/boards/pins_BTT_SKR_MINI_E3_V3_0.h Marlin/src/pins/stm32g0/pins_BTT_SKR_MINI_E3_V3_0.h
+#cp $CFGDIR/boards/pins_BTT_SKR_MINI_E3_V3_0.h Marlin/src/pins/stm32g0/pins_BTT_SKR_MINI_E3_V3_0.h
 
 opt_set CUSTOM_MACHINE_NAME "\"Ender-3 V2 SKR\""
 opt_set STRING_CONFIG_H_AUTHOR "\"(Ned, SKR-mini-E3-V3.0)\""
@@ -157,11 +157,11 @@ opt_enable \
 	RESTORE_LEVELING_AFTER_G28 \
 	G26_MESH_VALIDATION \
 	AUTO_REPORT_SD_STATUS \
-	TMC_DEBUG
+	TMC_DEBUG \
+	DIAG_JUMPERS_REMOVED 
 	
 opt_disable \
-	Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN \
-	DEFAULT_EJERK
+	Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
 echo "- Configured for Ender 3 V2 SKR" >> README.md
 
