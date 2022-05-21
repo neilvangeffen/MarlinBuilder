@@ -11,7 +11,7 @@ opt_set CUSTOM_MACHINE_NAME "\"Ender-3 Max ${MB_VERSION}\""
 $CFGDIR/bootscreens/ender
 $CFGDIR/boards/skr_e3_v3
 
-opt_set CUSTOM_MACHINE_NAME "\"Ender-3 V2 SKR\""
+opt_set CUSTOM_MACHINE_NAME "\"Ender-3 Max SKR\""
 opt_set STRING_CONFIG_H_AUTHOR "\"(Ned, SKR-mini-E3-V3.0)\""
 
 opt_set TEMP_SENSOR_BED "1"
@@ -24,6 +24,9 @@ opt_set DEFAULT_bedKp "162.06"
 opt_set DEFAULT_bedKi "17.89"
 opt_set DEFAULT_bedKd "978.75"
 
+opt_set WATCH_TEMP_PERIOD "30"
+opt_set WATCH_TEMP_INCREASE "2"
+
 opt_set EXTRUDE_MAXLENGTH "500"
 
 opt_set X_DRIVER_TYPE "TMC2209"
@@ -31,7 +34,7 @@ opt_set Y_DRIVER_TYPE "TMC2209"
 opt_set Z_DRIVER_TYPE "TMC2209"
 opt_set E0_DRIVER_TYPE "TMC2209"
 
-opt_set DEFAULT_AXIS_STEPS_PER_UNIT "{ 80, 80, 400, 98.3 }"
+opt_set DEFAULT_AXIS_STEPS_PER_UNIT "{ 80, 80, 400, 96.15385 }"
 opt_set DEFAULT_MAX_FEEDRATE "{ 500, 500, 5, 25 }"
 opt_set DEFAULT_MAX_ACCELERATION "{ 3000, 3000, 100, 10000 }"
 opt_set HOMING_FEEDRATE_MM_M "{ (40*60), (40*60), (4*60) }"
@@ -39,6 +42,7 @@ opt_set HOMING_FEEDRATE_MM_M "{ (40*60), (40*60), (4*60) }"
 opt_set DEFAULT_ACCELERATION "500"
 opt_set DEFAULT_RETRACT_ACCELERATION "1000"
 opt_set DEFAULT_TRAVEL_ACCELERATION "1000"
+opt_set JUNCTION_DEVIATION_MM "0.015"
 
 opt_set NOZZLE_TO_PROBE_OFFSET "{ 50, -10, 0 }"
 
@@ -49,7 +53,7 @@ opt_set INVERT_E0_DIR "true"
 
 opt_set X_BED_SIZE "310"
 opt_set Y_BED_SIZE "310"
-opt_set Z_MAX_POS "340"
+opt_set Z_MAX_POS "320"
 
 opt_set GRID_MAX_POINTS_X "5"
 opt_set GRID_MAX_POINTS_Y "5"
@@ -62,8 +66,8 @@ opt_set Z_CURRENT "800"
 opt_set E0_CURRENT "800"
 
 opt_set PREHEAT_1_LABEL "\"PLA\""
-opt_set PREHEAT_1_TEMP_HOTEND "210"
-opt_set PREHEAT_1_TEMP_BED "40"
+opt_set PREHEAT_1_TEMP_HOTEND "220"
+opt_set PREHEAT_1_TEMP_BED "50"
 opt_set PREHEAT_1_FAN_SPEED "64"
 
 opt_set PREHEAT_2_LABEL "\"PLA Hot\""
@@ -118,6 +122,7 @@ opt_enable \
 	SDSUPPORT \
 	ENDSTOP_INTERRUPTS_FEATURE \
 	ENDSTOPS_ALWAYS_ON_DEFAULT \
+	Z_MIN_PROBE_REPEATABILITY_TEST \
 	USE_CONTROLLER_FAN \
 	CONTROLLER_FAN_EDITABLE \
 	SDCARD_SORT_ALPHA \
@@ -154,8 +159,9 @@ opt_enable \
 	AUTO_REPORT_SD_STATUS \
 	TMC_DEBUG
 	
-
-opt_disable Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+opt_disable \
+	Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN \
+	DEFAULT_EJERK
 
 echo "- Configured for Ender 3 Max SKR" >> README.md
 
