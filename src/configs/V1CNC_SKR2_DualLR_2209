@@ -165,7 +165,7 @@ opt_enable \
 # Skew Correction
 opt_enable \
 	SKEW_CORRECTION \
-	SKEW_CORRECTION_FOR_Z \ 
+	SKEW_CORRECTION_FOR_Z \
 	SKEW_CORRECTION_GCODE
 
 # Babystepping
