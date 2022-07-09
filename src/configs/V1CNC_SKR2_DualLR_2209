@@ -129,7 +129,7 @@ opt_enable \
 opt_set NOZZLE_TO_PROBE_OFFSET "{ 0, 0, 0 }"
 opt_set MULTIPLE_PROBING "3"
 opt_set Z_MIN_PROBE_ENDSTOP_INVERTING "true"
-opt_set XY_PROBE_FEEDRATE "100x60"
+opt_set XY_PROBE_FEEDRATE "100*60"
 
 opt_enable \
 	Z_MIN_PROBE_REPEATABILITY_TEST \
