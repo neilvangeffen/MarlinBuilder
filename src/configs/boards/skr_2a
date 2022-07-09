@@ -16,7 +16,7 @@ opt_enable \
 		SDSUPPORT
 
 pushd Marlin/src/HAL
-rm -rf AVR DUE ESP32 LINUX SAMD51 STM* TEENSY*
+rm -rf AVR DUE ESP32 LINUX SAMD51 LPC* TEENSY*
 popd
 
 # Write some useful tidbits to the readme.
