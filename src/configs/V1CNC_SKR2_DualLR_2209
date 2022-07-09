@@ -208,42 +208,42 @@ opt_set MAIN_MENU_ITEM_4_GCODE "\"G28 XY\""
 opt_set MAIN_MENU_ITEM_5_DESC "\"Home Z\""
 opt_set MAIN_MENU_ITEM_5_GCODE "\"G28 Z\""
 
-opt_set MAIN_MENU_ITEM_6_DESC "\"Probe Z\""
+#opt_set MAIN_MENU_ITEM_6_DESC "\"Probe Z\""
 #opt_set MAIN_MENU_ITEM_6_GCODE "\"G30\""
-opt_set MAIN_MENU_ITEM_6_GCODE "\"G38.3\""
+#opt_set MAIN_MENU_ITEM_6_GCODE "\"G38.3\""
 
-opt_set MAIN_MENU_ITEM_7_DESC "\"Set Z0\""
-opt_set MAIN_MENU_ITEM_7_GCODE "\"G92 Z0\""
+#opt_set MAIN_MENU_ITEM_7_DESC "\"Set Z0\""
+#opt_set MAIN_MENU_ITEM_7_GCODE "\"G92 Z0\""
 
-opt_set MAIN_MENU_ITEM_8_DESC "\"Set Z1\""
-opt_set MAIN_MENU_ITEM_8_GCODE "\"G92 Z1\""
+#opt_set MAIN_MENU_ITEM_8_DESC "\"Set Z1\""
+#opt_set MAIN_MENU_ITEM_8_GCODE "\"G92 Z1\""
 
-opt_set MAIN_MENU_ITEM_9_DESC "\"Set Z-1\""
-opt_set MAIN_MENU_ITEM_9_GCODE "\"G92 Z-1\""
+#opt_set MAIN_MENU_ITEM_9_DESC "\"Set Z-1\""
+#opt_set MAIN_MENU_ITEM_9_GCODE "\"G92 Z-1\""
 
-opt_set MAIN_MENU_ITEM_10_DESC "\"Store Position 1\""
-opt_set MAIN_MENU_ITEM_10_GCODE "\"G60 S1\""
+#opt_set MAIN_MENU_ITEM_10_DESC "\"Store Position 1\""
+#opt_set MAIN_MENU_ITEM_10_GCODE "\"G60 S1\""
 
-opt_set MAIN_MENU_ITEM_11_DESC "\"Store Position 2\""
-opt_set MAIN_MENU_ITEM_11_GCODE "\"G60 S2\""
+#opt_set MAIN_MENU_ITEM_11_DESC "\"Store Position 2\""
+#opt_set MAIN_MENU_ITEM_11_GCODE "\"G60 S2\""
 
-opt_set MAIN_MENU_ITEM_12_DESC "\"Recall Position 1\""
-opt_set MAIN_MENU_ITEM_12_GCODE "\"G61 S1\""
+#opt_set MAIN_MENU_ITEM_12_DESC "\"Recall Position 1\""
+#opt_set MAIN_MENU_ITEM_12_GCODE "\"G61 S1\""
 
-opt_set MAIN_MENU_ITEM_13_DESC "\"Recall Position 2\""
-opt_set MAIN_MENU_ITEM_13_GCODE "\"G61 S2\""
+#opt_set MAIN_MENU_ITEM_13_DESC "\"Recall Position 2\""
+#opt_set MAIN_MENU_ITEM_13_GCODE "\"G61 S2\""
 
-opt_set MAIN_MENU_ITEM_14_DESC "\"Machine Coordinates\""
-opt_set MAIN_MENU_ITEM_14_GCODE "\"G53\""
+#opt_set MAIN_MENU_ITEM_14_DESC "\"Machine Coordinates\""
+#opt_set MAIN_MENU_ITEM_14_GCODE "\"G53\""
 
-opt_set MAIN_MENU_ITEM_15_DESC "\"Workspace 1 Coordinates\""
-opt_set MAIN_MENU_ITEM_15_GCODE "\"G54\""
+#opt_set MAIN_MENU_ITEM_15_DESC "\"Workspace 1 Coordinates\""
+#opt_set MAIN_MENU_ITEM_15_GCODE "\"G54\""
 
-opt_set MAIN_MENU_ITEM_16_DESC "\"Workspace 2 Coordinates\""
-opt_set MAIN_MENU_ITEM_16_GCODE "\"G55\""
+#opt_set MAIN_MENU_ITEM_16_DESC "\"Workspace 2 Coordinates\""
+#opt_set MAIN_MENU_ITEM_16_GCODE "\"G55\""
 
-opt_set MAIN_MENU_ITEM_17_DESC "\"Workspace 3 Coordinates\""
-opt_set MAIN_MENU_ITEM_17_GCODE "\"G56\""
+#opt_set MAIN_MENU_ITEM_17_DESC "\"Workspace 3 Coordinates\""
+#opt_set MAIN_MENU_ITEM_17_GCODE "\"G56\""
 
 echo "Configured for SKR2 Dual LR" >> README.md
 
