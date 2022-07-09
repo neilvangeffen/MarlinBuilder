@@ -1,0 +1,23 @@
+opt_set MOTHERBOARD BOARD_BTT_SKR_V2_0_REV_B
+
+opt_set SERIAL_PORT "1"
+opt_set SERIAL_PORT_2 "-1"
+
+opt_set BAUDRATE "115200"
+opt_set SD_DETECT_STATE "HIGH"
+opt_set SDCARD_CONNECTION "ONBOARD"
+
+. $CFGDIR/accessories/use-32-microsteps
+
+opt_enable \
+    REVERSE_ENCODER_DIRECTION \
+		SPEAKER \
+		SD_CHECK_AND_RETRY \
+		SDSUPPORT
+
+pushd Marlin/src/HAL
+rm -rf AVR DUE ESP32 LINUX SAMD51 STM* TEENSY*
+popd
+
+# Write some useful tidbits to the readme.
+echo "- Configured for Skr 2 Rev B" >> README.md
