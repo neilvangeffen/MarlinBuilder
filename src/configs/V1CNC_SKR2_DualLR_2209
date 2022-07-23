@@ -186,24 +186,24 @@ opt_add ST7920_DELAY_3 "DELAY_NS(250)"
 opt_set SD_SPI_SPEED SPI_HALF_SPEED
 
 # Custom Menu
-opt_enable CUSTOM_MENU_MAIN
+#opt_enable CUSTOM_MENU_MAIN
 
-opt_set CUSTOM_MENU_MAIN_TITLE "\"CNC Menu Items\""
+#opt_set CUSTOM_MENU_MAIN_TITLE "\"CNC Menu Items\""
 
-opt_set MAIN_MENU_ITEM_1_DESC "\"Move Z\+10\""
-opt_set MAIN_MENU_ITEM_1_GCODE "\"G91\\\nG0 Z10 F600\\\nG90\""
+#opt_set MAIN_MENU_ITEM_1_DESC "\"Move Z\+10\""
+#opt_set MAIN_MENU_ITEM_1_GCODE "\"G91\\\nG0 Z10 F600\\\nG90\""
 
-opt_set MAIN_MENU_ITEM_2_DESC "\"Set X0 Y0\""
-opt_set MAIN_MENU_ITEM_2_GCODE "\"G92 X0 Y0\""
+#opt_set MAIN_MENU_ITEM_2_DESC "\"Set X0 Y0\""
+#opt_set MAIN_MENU_ITEM_2_GCODE "\"G92 X0 Y0\""
 
-opt_set MAIN_MENU_ITEM_3_DESC "\"Go To X0 Y0\""
-opt_set MAIN_MENU_ITEM_3_GCODE "\"G0 X0 Y0 F6000\""
+#opt_set MAIN_MENU_ITEM_3_DESC "\"Go To X0 Y0\""
+#opt_set MAIN_MENU_ITEM_3_GCODE "\"G0 X0 Y0 F6000\""
 
-opt_set MAIN_MENU_ITEM_4_DESC "\"Home X Y\""
-opt_set MAIN_MENU_ITEM_4_GCODE "\"G28 XY\""
+#opt_set MAIN_MENU_ITEM_4_DESC "\"Home X Y\""
+#opt_set MAIN_MENU_ITEM_4_GCODE "\"G28 XY\""
 
-opt_set MAIN_MENU_ITEM_5_DESC "\"Home Z\""
-opt_set MAIN_MENU_ITEM_5_GCODE "\"G28 Z\""
+#opt_set MAIN_MENU_ITEM_5_DESC "\"Home Z\""
+#opt_set MAIN_MENU_ITEM_5_GCODE "\"G28 Z\""
 
 #opt_set MAIN_MENU_ITEM_6_DESC "\"Probe Z\""
 #opt_set MAIN_MENU_ITEM_6_GCODE "\"G30\""
