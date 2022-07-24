@@ -36,9 +36,9 @@ jobs:
       fail-fast: false # Allow all machines to finish building
       matrix:
         branch: ${{ fromJson(
-          github.event_name == 'push' && '["bugfix-2.0.x"]' ||
-          github.event_name == 'schedule' && '["bugfix-2.0.x"]' ||
-          github.event_name == 'pull_request' && '["bugfix-2.0.x", "2.0.8"]' ||
+          github.event_name == 'push' && '["2.0.x"]' ||
+          github.event_name == 'schedule' && '["2.0.x"]' ||
+          github.event_name == 'pull_request' && '["2.0.x", "2.0.8"]' ||
           '["2.0.8"]') }}
         machine:
         - V1CNC_SKR2_DualLR_2209_20x
