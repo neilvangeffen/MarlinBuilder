@@ -2,6 +2,7 @@ opt_set MOTHERBOARD BOARD_BTT_SKR_V2_0_REV_B
 
 opt_set SERIAL_PORT "1"
 opt_set SERIAL_PORT_2 "-1"
+opt_set SERIAL_PORT_3 "3"
 
 opt_set BAUDRATE "115200"
 opt_set SD_DETECT_STATE "HIGH"
