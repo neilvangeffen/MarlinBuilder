@@ -39,7 +39,7 @@ opt_set MANUAL_Y_HOME_POS "0"
 opt_set MANUAL_Z_HOME_POS "80"
 opt_set HOMING_BACKOFF_POST_MM "{ 0-MANUAL_X_HOME_POS, 0-MANUAL_Y_HOME_POS, 5 }"
 opt_set HOMING_BUMP_MM "{ 10, 10, 2 }"
-opt_set HOMING_BUMP_DIVISOR "{ 4, 4, 4 }"
+opt_set HOMING_BUMP_DIVISOR "{ 15, 20, 4 }"
 
 opt_set SAVED_POSITIONS "2"
 
