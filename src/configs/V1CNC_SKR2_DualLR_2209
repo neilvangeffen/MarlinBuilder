@@ -16,7 +16,7 @@ opt_set DEFAULT_MAX_FEEDRATE "{ 150, 150, 10 }"
 opt_set DEFAULT_MAX_ACCELERATION "{ 180, 180, 80 }"
 opt_set DEFAULT_AXIS_STEPS_PER_UNIT "{ 200, 200, 3200 }"
 opt_set MANUAL_FEEDRATE "{30*60, 30*60, 3*60 }"
-opt_set HOMING_FEEDRATE_MM_M "{ (75*60), (100*60), (5*60) }"
+opt_set HOMING_FEEDRATE_MM_M "{ (80*60), (100*60), (5*60) }"
 
 opt_set MIN_ARC_SEGMENT_MM ".2"
 opt_set CURRENT_STEP_DOWN "0"
@@ -38,8 +38,8 @@ opt_set MANUAL_X_HOME_POS "0"
 opt_set MANUAL_Y_HOME_POS "0"
 opt_set MANUAL_Z_HOME_POS "80"
 opt_set HOMING_BACKOFF_POST_MM "{ 0-MANUAL_X_HOME_POS, 0-MANUAL_Y_HOME_POS, 5 }"
-opt_set HOMING_BUMP_MM "{ 10, 10, 2 }"
-opt_set HOMING_BUMP_DIVISOR "{ 15, 20, 4 }"
+opt_set HOMING_BUMP_MM "{ 10, 25, 2 }"
+opt_set HOMING_BUMP_DIVISOR "{ 8, 10, 4 }"
 
 opt_set SAVED_POSITIONS "2"
 
@@ -153,7 +153,7 @@ opt_enable \
 
 # Auto Z Levelling
 opt_set G34_MAX_GRADE "1"
-opt_set Z_STEPPER_ALIGN_ACC "0.1"
+opt_set Z_STEPPER_ALIGN_ACC "0.05"
 
 opt_enable \
 	Z_STEPPER_AUTO_ALIGN 
