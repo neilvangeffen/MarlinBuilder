@@ -1,7 +1,5 @@
 opt_set Z_HOME_DIR "+1"
 
-opt_set NUM_Z_STEPPER_DRIVERS "2"
-
 opt_set X2_USE_ENDSTOP "_XMAX_"
 opt_set Z2_USE_ENDSTOP "_YMAX_"
 
