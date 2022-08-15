@@ -36,12 +36,10 @@ jobs:
       fail-fast: false # Allow all machines to finish building
       matrix:
         branch: ${{ fromJson(
-          github.event_name == 'push' && '["bugfix-2.1.x"]' ||
-          github.event_name == 'schedule' && '["bugfix-2.1.x"]' ||
-          github.event_name == 'pull_request' && '["bugfix-2.1.x", "2.0.8"]' ||
-          '["2.0.8"]') }}
+          github.event_name == 'push' && '["2.1.x"]' ||
+          github.event_name == 'schedule' && '["2.1.x"]' ||
+          github.event_name == 'pull_request' && '["2.1.x"]' }}
         machine:
-        - V1CNC_SkrTurbo_DualLR_2209
         - Anet_A6_SkrTurbo_2209_Sensorless
         - Wanhao_Duplicator_SkrTurbo_2209
 
