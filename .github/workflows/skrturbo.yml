@@ -38,7 +38,7 @@ jobs:
         branch: ${{ fromJson(
           github.event_name == 'push' && '["2.1.x"]' ||
           github.event_name == 'schedule' && '["2.1.x"]' ||
-          github.event_name == 'pull_request' && '["2.1.x"]' }}
+          github.event_name == 'pull_request' && '["2.1.x"]') }}
         machine:
         - Anet_A6_SkrTurbo_2209_Sensorless
         - Wanhao_Duplicator_SkrTurbo_2209
