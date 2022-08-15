@@ -1,9 +1,9 @@
 name: skr_turbo
 
 on:
-  schedule:
+  #schedule:
     # At 12:15 each Wednesday. No idea what time zone this is...
-    - cron:  '09 18 * * 3'
+    #- cron:  '09 18 * * 3'
   push:
     #branches:
     #- main
@@ -15,6 +15,7 @@ on:
     - src/configs/V1*Rambo*
     - src/configs/V1*Ramps*
     - src/configs/V1*Skr1p3*
+    - src/configs/V1*Skre3*
     - '**/*.md'
   release:
     types:
@@ -35,9 +36,9 @@ jobs:
       fail-fast: false # Allow all machines to finish building
       matrix:
         branch: ${{ fromJson(
-          github.event_name == 'push' && '["bugfix-2.0.x"]' ||
-          github.event_name == 'schedule' && '["bugfix-2.0.x"]' ||
-          github.event_name == 'pull_request' && '["bugfix-2.0.x", "2.0.8"]' ||
+          github.event_name == 'push' && '["bugfix-2.1.x"]' ||
+          github.event_name == 'schedule' && '["bugfix-2.1.x"]' ||
+          github.event_name == 'pull_request' && '["bugfix-2.1.x", "2.0.8"]' ||
           '["2.0.8"]') }}
         machine:
         - V1CNC_SkrTurbo_DualLR_2209
